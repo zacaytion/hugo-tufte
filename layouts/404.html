@@ -1,13 +1,11 @@
 {{ define "main" }}
-  <div id="layout">
-    <article>
-      {{ partial "brand.html" . }}
-      
-      <section><h2 id="title">Looks like there is a problem in the url... <br/>
-        <a href="{{ "" | relURL}}">Go Home ? </a></h2></section>
-      <section>
-        {{ partial "footer.html" . }}
-      </section>
-    </article>
-  </div>
+<article>
+  {{ partial "brand.html" . }}
+
+  <section><h2 id="title">Looks like there is a problem in the url... <br/>
+    <a href="{{ "" | relURL}}">Go Home ? </a></h2></section>
+  <section>
+    {{ partial "footer.html" . }}
+  </section>
+</article>
 {{ end }}

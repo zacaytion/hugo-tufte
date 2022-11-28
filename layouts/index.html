@@ -1,8 +1,8 @@
 {{ define "main" }}
-<div id="layout">
-  <article>
-    {{ partial "brand.html" . }}
-    {{ range where .Site.RegularPages "Type" "post"}}
+
+<article>
+  {{ partial "brand.html" . }}
+  {{ range where .Site.RegularPages "Type" "post"}}
     
         <h1 class="content-title">
           {{ if .IsNode }}
@@ -18,8 +18,8 @@
         <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
         {{/*  {{ end }}  */}}
 
-    {{ end  }}
-    {{ partial "footer.html" . }}
-  </article>
-</div>
+  {{ end  }}
+  {{ partial "footer.html" . }}
+</article>
+
 {{ end }}

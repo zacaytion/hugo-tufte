@@ -3,21 +3,17 @@ layout: "baseof"
 +++ -->
 
 {{ define "main" }}
-    
 
-
-<div id="layout">
-    <article>
-        {{ partial "brand.html" . }}
-        {{ range first 5 .Site.Pages }}
-        {{ partial "content.header.html" . }}
-        <p>{{ .Summary }}</p>
-        {{ if .Truncated }}
-        <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
-        {{ end  }}
-        {{ end  }}
-        {{ partial "footer.html" . }}
-    </article>
-</div>
+<article>
+  {{ partial "brand.html" . }}
+  {{ range first 5 .Site.Pages }}
+    {{ partial "content.header.html" . }}
+    <p>{{ .Summary }}</p>
+    {{ if .Truncated }}
+      <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
+    {{ end  }}
+  {{ end  }}
+  {{ partial "footer.html" . }}
+</article>
 
 {{ end }}

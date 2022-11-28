@@ -1,10 +1,7 @@
-{{ partial "header.html" . }}
-
-<body>
-<div id="layout">
-<article>
-{{ partial "brand.html" . }}
-{{ partial "content.header.html" . }}
+{{ define "main" }}
+  <article>
+    {{ partial "brand.html" . }}
+    {{ partial "content.header.html" . }}
     {{ $data := .Data }}
     <div>
       <div>
@@ -59,6 +56,4 @@
     </div>
 {{ partial "footer.html" . }}
 </article>
-</div>
-</body>
-</html>
+{{ end }}

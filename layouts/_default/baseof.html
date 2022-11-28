@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-    {{- partial "header.html" . -}}
-
-    <body >
-        {{ block "main" . }}{{ end }}
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    {{- partial "head/head.html" . -}}
+    {{- partial "utils/body-class.html" . -}}
+  <body>
+    <header>Header</header>
+    <main class="{{ delimit (.Scratch.Get "class") " " }}" >
+      {{- block "main" . }}{{- end }}
+    </main>
+    <footer>Footer</footer>
     </body>
-
 </html>

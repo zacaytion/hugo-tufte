@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ partial "head/resource-hints.html" . }}
+
+  {{ partial "utils/libsass" "scss/styles.scss"}}
+
+  {{ partial "head/seo.html" . }}
+  {{ partial "head/favicon.html" . }}
+
+  {{ if or .Params.math .IsHome }}
+    {{ partial "math.html" . }}
+  {{ end }}
+
+
+</head>

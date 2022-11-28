@@ -1,19 +1,11 @@
-{{/*  
-
-  This template render single pages 
-
-*/}}
-
 {{ define "main" }}
-<div id="layout">
-  <article>
-    {{ partial "brand.html" . }}
-    {{ partial "content.header.html" . }}
-    {{ partial "toc.html" . }}
-    <section>{{ .Content }}</section>
-    <section>
-      {{ partial "footer.html" . }}
-    </section>
-  </article>
-</div>
+<article>
+  {{ partial "brand.html" . }}
+  {{ partial "content.header.html" . }}
+  {{ partial "toc.html" . }}
+  <section>{{ .Content }}</section>
+  <section>
+    {{ partial "footer.html" . }}
+  </section>
+</article>
 {{ end }}

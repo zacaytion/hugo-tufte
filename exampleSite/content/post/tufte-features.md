@@ -12,8 +12,10 @@ categories = ["katex", "latex", "tufte-css"]
 +++
 
 This is a quick demonstration post.  It serves as an example of the features
-of this theme.  One of them is $ \LaTeX $ via [Katex](https://katex.org/). 
+of this theme.  One of them is $ \LaTeX $ via [Katex](https://katex.org/).
+
 {{< section "begin" >}}
+
 ## A Bit About Mathematics
 
 {{< epigraph pre="Shawn O'Hare, " cite="Math is Fun" >}}
@@ -25,6 +27,7 @@ to start the beginning of a section.
 <!--more-->
 
 ### Inline
+
 Some inline math:
 {{< marginnote "mn-example" >}}This is a margin note.{{< /marginnote >}}
 $e^{i \pi} = -1$
@@ -32,6 +35,7 @@ $e^{i \pi} = -1$
 and $ a_2 = 3 $.
 
 ### Display
+
 And display math using this symbol `$$`:
 {{< sidenote "sn-example" >}}This is a sidenote!{{< /sidenote >}}
 $$
@@ -77,6 +81,7 @@ $$
 ```
 
 ### Blockquotes
+
 Some blockquotes.  But first, we try to manually cite via
 <cite>This is between cite tags and has math: $e^x $</cite>
 
@@ -99,8 +104,10 @@ HTML such as: `<span class="newthought">...</span>"`.  The theme also provides
 the `newthought` shortcode.
 
 ### Code
+
 As an example of some inline code: `go test -v -short`.
 And this is some block-code:
+
 ```go {linenos=table,hl_lines=["2-5"],linenostart=199}
 package main
 
@@ -117,7 +124,8 @@ func main() {
 }
 ```
 
-Here's an example without line numbers. 
+Here's an example without line numbers.
+
 ```go {hl_lines=["2-5"],linenostart=199}
 package main
 
@@ -135,6 +143,7 @@ func main() {
 ```
 
 ### Figure
+
 Below we have an example of a regular width figure.
 {{< figure
   src="https://github.com/edwardtufte/tufte-css/raw/gh-pages/img/exports-imports.png"
@@ -149,15 +158,12 @@ Below we have an example of a regular width figure.
  >}}
 {{< section "end" >}}
 
-
-
 {{< figure
   src="https://edwardtufte.github.io/tufte-css/img/rhino.png"
   class="class param"
   type="margin"
   label="mn-rhino"
   title="The image title."
-  label="mn-export-import"
   caption="This is the image caption."
   attr="Image attribution"
   attrlink="https://edwardtufte.github.io/tufte-css"
@@ -182,8 +188,11 @@ Below is a full-width figure.
 {{< section "end" >}}
 
 {{< div class="myclass" >}}
+
 ## A Story About Cats
+
 Climb a tree, wait for a fireman jump to fireman then scratch his face sleep on dog bed, force dog to sleep on floor cat snacks, and eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap climb a tree, wait for a fireman jump to fireman then scratch his face put toy mouse in food bowl run out of litter box at full speed . See owner, run in terror chase mice, so thinking longingly about tuna brine for eat a plant, kill a hand for wake up human for food at 4am. Human is washing you why halp oh the horror flee scratch hiss bite scratch the furniture and rub face on owner. Loves cheeseburgers see owner, run in terror chew on cable. Thug cat ignore the squirrels, you'll never catch them anyway. Eat a plant, kill a hand find empty spot in cupboard and sleep all day so hide head under blanket so no one can see yet love to play with owner's hair tie rub face on everything i like big cats and i can not lie. Wake up human for food at 4am stare at the wall, play with food and get confused by dust yet then cats take over the world scamper. Inspect anything brought into the house get video posted to internet for chasing red dot. Brown cats with pink ears chew foot spit up on light gray carpet instead of adjacent linoleum. I am the best wake up human for food at 4am, meow spread kitty litter all over house, for meow. Knock dish off table head butt cant eat out of my own dish jump off balcony, onto stranger's head, chase ball of string scream at teh bath but climb leg, so unwrap toilet paper but destroy couch. Climb a tree, wait for a fireman jump to fireman then scratch his face. Leave hair everywhere swat turds around the house eat grass, throw it back up, and eat grass, throw it back up. Chase after silly colored fish toys around the house.
+
 {{< div "end" >}}
 
 ### We really like cats.

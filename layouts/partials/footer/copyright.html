@@ -1,0 +1,13 @@
+<footer>
+  <p class="copyright">
+  <small>
+    {{ with .Site.Params.copyright }}
+      {{ . | safeHTML }}
+    {{ else }}
+      &copy; {{now.Format "2006"}}
+    {{ with .Site.Params.copyrightHolder }}{{ . }}{{end}}.
+    All rights reserved.
+    {{end}}
+  </small>
+  </p>
+</footer>

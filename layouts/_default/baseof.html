@@ -7,6 +7,6 @@
     <main class="{{ delimit (.Scratch.Get "class") " " }}" >
       {{- block "main" . }}{{- end }}
     </main>
-    <footer>Footer</footer>
+    {{- partial "footer/copyright" . -}}
     </body>
 </html>

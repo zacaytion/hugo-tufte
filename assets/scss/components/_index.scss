@@ -1,6 +1,6 @@
-@forward "_meta";
-@forward "_header";
-@forward "_nav";
-@forward "_footer";
-@forward "_toc";
-@forward "_code-highlight";
+@import "components/meta";
+@import "components/header";
+@import "components/nav";
+@import "components/footer";
+@import "components/toc";
+@import "components/code-highlight";

@@ -13,11 +13,18 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 
-<!-- {{ $htoptions := (dict "targetPath" "/css/hugo-tufte.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-{{ $htstyle := resources.Get "scss/hugo-tufte.scss"| resources.ExecuteAsTemplate "main.scss" .  | resources.ToCSS $htoptions }}
+{{ $htoptions := (dict
+    "targetPath" "/css/hugo-tufte.min.css"
+    "transpiler" "libsass"
+    "outputStyle" "compressed"
+    "enableSourceMap" true
+    "includePaths" (slice "node_modules")) }}
+
+{{ $htstyle := resources.Get "scss/hugo-tufte.scss" | toCSS $htoptions }}
+
 <link rel="stylesheet" href="{{ $htstyle.Permalink | relURL }}">
- -->
-{{ partial "utils/libsass" "scss/hugo-tufte.scss" }}
+
+<!-- {{/* partial "utils/libsass" "scss/hugo-tufte.scss" */}} -->
 
 <link rel="stylesheet"  href="{{ "/css/hugo-tufte-override.css" | relURL }}">
 

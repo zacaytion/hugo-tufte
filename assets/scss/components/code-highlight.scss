@@ -1,6 +1,14 @@
 $ht-bg-color-light: #dde2ff;
 $ht-bg-color-dark:#282a36;
 $ht-code-border-radius: .4em;
+
+// fix tufte update
+pre > code {
+    // overflow-x: inherit;
+    margin-left: 0;
+    width: unset;
+}
+
 .highlight {
     width: 55%;
     overflow-x: scroll;
@@ -10,20 +18,20 @@ $ht-code-border-radius: .4em;
         margin: $ht-code-border-radius 0 $ht-code-border-radius 0;
         & td:first-of-type {
             & span:not(& span>span) {
-                padding: 0 .75em 0 .5em;
+                padding: 0 1.2em 0 .5em;
             }
         }
     }
     &>.chroma>code {
 
         width: max-content;
-        margin-top: .5em;
-        margin-bottom: .5em;
-        margin-left: .5em;
-        &>span.hl{
-            margin-left: -.5em;
-            padding-left: .5em;
-        }
+        // margin-top: .5em;
+        // margin-bottom: .5em;
+        // margin-left: .5em;
+        // &>span.hl{
+        //     margin-left: -.5em;
+        //     padding-left: .5em;
+        // }
     }
 
     .chroma .hl {
@@ -47,18 +55,14 @@ $ht-code-border-radius: .4em;
     }
 }
 
-.highlight .lntable {
-    overflow: initial;
-}
+// .highlight .lntable {
+//     overflow: initial;
+// }
 
 .highlight pre {
     margin: 0;
 }
 
-.highlight pre code {
-    display: block;
-    font-size: 1rem;
-}
 
 // fix #48 => https://github.com/slashformotion/hugo-tufte/issues/48
 ul>li>div.highlight {

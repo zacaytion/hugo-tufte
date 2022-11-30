@@ -1,0 +1,12 @@
+# Don't change the settings below
+[goldmark]
+  [goldmark.renderer]
+    unsafe = true # make the shortcodes work
+
+[highlight]
+  noClasses = false
+
+# [tableOfContents]
+#   endLevel = 3
+#   ordered = false
+#   startLevel = 2

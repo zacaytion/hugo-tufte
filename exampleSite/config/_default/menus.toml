@@ -1,0 +1,46 @@
+# -----------------------------------------------------------------------
+# Navigation menu
+# -----------------------------------------------------------------------
+[[nav]]
+  name = "Home"
+  pre = "<i class='fas fa-home la-lg'></i>"
+  weight = -110
+  identifier = "home"
+  url = "/"
+[[nav]]
+  name = "Posts"
+  pre = "<i class='fas fa-book fa-lg'></i> "
+  weight = -100
+  identifier = "posts"
+  url = "/post"
+[[nav]]
+  name = "Categories"
+  pre = "<i class='fas fa-tags fa-lg'></i> "
+  weight = -90
+  identifier = "categories"
+  url = "/categories"
+[[nav]]
+  name = "About"
+  pre = "<i class='fas fa-info-circle  fa-lg'></i> "
+  weight = -80
+  identifier = "about"
+  url = "/about"
+[[nav]]
+  name = "Source Code"
+  pre = "<i class='fab fa-github fa-lg'></i> "
+  weight = -70
+  identifier = "github"
+  url = "https://github.com/slashformotion/hugo-tufte"
+
+# -----------------------------------------------------------------------
+# FOOTER MENU
+# If you need to add custom links to you footer: put them here. Be aware that this theme is using fontawesome.
+# Please head to https://fontawesome.com/v4.7/icons/ to pick icons
+# -----------------------------------------------------------------------
+
+[[footer]]
+  name = "Custom footer link"
+  pre = "<i class='fab fa-google fa-lg'></i> "
+  weight = -90
+  identifier = "custom_link"
+  url = "https://google.com"

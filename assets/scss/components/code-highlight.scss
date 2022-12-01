@@ -4,38 +4,27 @@ $ht-code-border-radius: .4em;
 
 // fix tufte update
 pre > code {
-    // overflow-x: inherit;
     margin-left: 0;
     width: unset;
 }
 
 .highlight {
-    width: 55%;
+    width: 52.5%;
+    margin-left: 2.5%;
     overflow-x: scroll;
     border-radius: $ht-code-border-radius;
 
-    &>div.chroma>table.lntable{
-        margin: $ht-code-border-radius 0 $ht-code-border-radius 0;
-        & td:first-of-type {
-            & span:not(& span>span) {
-                padding: 0 1.2em 0 .5em;
-            }
-        }
-    }
-    &>.chroma>code {
-
+    pre {
+        margin: 0;
         width: max-content;
-        // margin-top: .5em;
-        // margin-bottom: .5em;
-        // margin-left: .5em;
-        // &>span.hl{
-        //     margin-left: -.5em;
-        //     padding-left: .5em;
-        // }
+        min-width: 100%;
+    }
+
+    &>.chroma>code {
+        width: max-content;
     }
 
     .chroma .hl {
-        // border-radius: $ht-code-border-radius / 2;
         display: block;
     }
 
@@ -54,15 +43,6 @@ pre > code {
         width: 90%;
     }
 }
-
-// .highlight .lntable {
-//     overflow: initial;
-// }
-
-.highlight pre {
-    margin: 0;
-}
-
 
 // fix #48 => https://github.com/slashformotion/hugo-tufte/issues/48
 ul>li>div.highlight {
@@ -84,9 +64,15 @@ ul>li>div.highlight {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    $ht-code-bgcolor: $ht-bg-color-dark;
-    @import "syntax/syntax-dark.scss";
+    // $ht-code-bgcolor: $ht-bg-color-dark;
+    // @import "vendor/chroma-syntax/dracula.scss";
 
+    $ht-code-bgcolor: #433e56;
+    @import "vendor/chroma-syntax/witchhazel.scss";
+
+    .chroma .hl {
+        background-color: #d9d9b436;
+    }
     .highlight {
         &::-webkit-scrollbar {
             background: $ht-code-bgcolor;

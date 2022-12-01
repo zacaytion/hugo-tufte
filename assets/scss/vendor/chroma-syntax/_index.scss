@@ -1,0 +1,8 @@
+@mixin dracula {
+    @import "vendor/chroma-syntax/dracula";
+}
+
+@mixin lovelace {
+    @import "vendor/chroma-syntax/lovelace";
+    $bg-color: #ffffff;
+}

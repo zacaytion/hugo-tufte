@@ -19,7 +19,7 @@ nav.menu li {
 nav.menu li a {
     text-decoration: none;
     background: transparent;
-    color: rgba(65, 70, 75, 1);
+    // color: rgba(65, 70, 75, 1);
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
@@ -28,5 +28,5 @@ nav.menu li a:hover,
 nav.menu li a:active,
 nav.menu li a:focus {
     background: inherit;
-    color: darkgray;
+    // color: darkgray;
 }

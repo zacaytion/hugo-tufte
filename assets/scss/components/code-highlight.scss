@@ -1,5 +1,3 @@
-$ht-bg-color-light: #dde2ff;
-$ht-bg-color-dark:#282a36;
 $ht-code-border-radius: .4em;
 
 // fix tufte update
@@ -13,6 +11,8 @@ pre > code {
     margin-left: 2.5%;
     overflow-x: scroll;
     border-radius: $ht-code-border-radius;
+    padding: .5em 0 .5em .5em;
+    border-left: 3px double #111;
 
     pre {
         margin: 0;
@@ -50,8 +50,8 @@ ul>li>div.highlight {
 }
 
 @media screen and (prefers-color-scheme: light) {
-    $ht-code-bgcolor: $ht-bg-color-light;
-    @import "syntax/syntax-light.scss";
+    $ht-code-bgcolor: #fffff8;
+    @import "vendor/chroma-syntax/algo_nu.scss";
 
     .highlight {
         &::-webkit-scrollbar {
@@ -64,21 +64,24 @@ ul>li>div.highlight {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    // $ht-code-bgcolor: $ht-bg-color-dark;
-    // @import "vendor/chroma-syntax/dracula.scss";
 
-    $ht-code-bgcolor: #433e56;
-    @import "vendor/chroma-syntax/witchhazel.scss";
+    $ht-code-bgcolor: #151515;
+    @import "vendor/chroma-syntax/swapoff.scss";
 
     .chroma .hl {
         background-color: #d9d9b436;
     }
     .highlight {
+        border-color: #a3a3a3;
         &::-webkit-scrollbar {
             background: $ht-code-bgcolor;
         }
         &::-webkit-scrollbar-thumb {
             background: scale-color($ht-code-bgcolor, $lightness: 23%, $saturation: -40%);
         }
+    }
+
+    .hl > .lnt {
+        color: #ffffff;
     }
 }

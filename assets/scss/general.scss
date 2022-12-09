@@ -3,7 +3,14 @@
 /* Contains extensions to the original tufte.css styles to */
 /* accomodate a blog-like site. */
 /* ------------------------------------------------------------------------ */
-
+/**
+ * Baskervville
+ * Fraunces
+ * Castoro
+ * STIX Two Text
+*/
+$font: 'Baskervville';
+@import url("https://fonts.googleapis.com/css2?family=#{$font}");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@351&display=swap");
 
 /* When setting the primary font stack, apply it to the Pure grid units along */
@@ -21,8 +28,8 @@ article,
 header,
 footer,
 .pure-g [class*="pure-u"] {
-    font-family: "et-book", -apple-system, "San Francisco", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-        "Open Sans", "Helvetica Neue", "Lucida Grand", sans-serif;
+    font-family: $font,  sans-serif;
+
 }
 
 p {

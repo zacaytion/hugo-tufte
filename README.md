@@ -1,4 +1,5 @@
 # Tufte Hugo Theme
+
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
 [![build github pages](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site-ghpages.yml/badge.svg)](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site-ghpages.yml)
 
@@ -50,6 +51,7 @@ There currently seems to be some weirdness with other environments,
 such as the `aligned` environment (`align*` is not supported by katex).  These environments will render provided
 they are wrapped in `<p>` tags and blank lines.  The snippet below should
 render correctly.
+
 ```latex
 Let $G$ be a finite group with exponent $2$.  Then every element is
 an involution, hence for any $x$, $y$ in $G$ we have:
@@ -81,6 +83,7 @@ The site specific parameters that this theme recognizes are:
 ***Socials***
 
 You can add links to your social media profile by using thoses parameters:
+
 - `github`: string
 - `gitlab`: string
 - `twitter`: string
@@ -119,6 +122,7 @@ support all the features present in the
   `cite` or `footer` metadata.
   - **Usage**: Accepts the named parameters `cite` and `footer`.
   - **Example**:
+
   ```html
   {{< blockquote cite="www.shawnohare.com" footer="Shawn" >}}
     There is nothing more beautiful than an elegant mathematical proof.
@@ -144,6 +148,7 @@ support all the features present in the
   make no styling assumptions, so spacing is important.  A more compactly
   styled epigraph will be used if the `type` parameter is set to `compact`.
   - **Example**:
+
   ```html
   {{< epigraph pre="Author Writer, " cite="Math is Fun" link='https://www.google.com' >}}
   This is an example of an epigraph with some math
@@ -156,6 +161,7 @@ support all the features present in the
   - **Description**: Wrap text to produce a numberless margin note.
   - Usage: `{{< marginnote >}}...{{< /marginnote >}}`
   - **Example**: 
+  
   ```html
   {{< marginnote >}}Some marginnote{{< /marginnote>}}
   ```
@@ -171,13 +177,12 @@ support all the features present in the
    `<section class="my-class">` tag, while
    `{{<section "end" >}}` inserts the closing `</section>` tag.
 
-
 - `sidenote`
   - **Description**: Wrap text to produce an automatically numbered sidenote.
   - **Usage**: identical to `marginnote`
   `{{< sidenote >}}...{{< /sidenote >}}`
-  - **Example**: 
+  - **Example**:
+
   ```html
   {{< sidenote >}}Some sidenote{{< /sidenote >}}
   ```
-

@@ -9,13 +9,13 @@
  * Castoro
  * STIX Two Text
 */
-$font: 'Baskervville';
-@import url("https://fonts.googleapis.com/css2?family=#{$font}");
+$fontSerif: 'Fraunces';
+$fontSans: 'Unbounded';
+// @import url("https://fonts.googleapis.com/css2?family=#{$fontSerif}");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@351&display=swap");
 
-/* When setting the primary font stack, apply it to the Pure grid units along */
-/* with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use */
-/* specific font stacks to ensure the greatest OS/browser compatibility. */
 html,
 button,
 input,
@@ -26,9 +26,10 @@ nav,
 section,
 article,
 header,
-footer,
-.pure-g [class*="pure-u"] {
-    font-family: $font,  sans-serif;
+footer {
+    font-size: 100%;
+    font-family: $fontSerif,  sans-serif;
+    font-weight: 300;
 
 }
 
@@ -48,7 +49,21 @@ code {
     width: 45%;
 }
 
+h1, h2, h3, h4, h5 {
+    font-style: normal;
+    font-family: $fontSans;
+    font-weight: 500;
 
+
+}
+h1 {
+  font-size: 5.653rem;
+}
+h2 {font-size: 3.998rem;}
+h3 {font-size: 2.827rem;}
+h4 {font-size: 1.999rem;}
+h5 {font-size: 1.414rem;}
+small, .text_small {font-size: 0.707rem;}
 /* ------------------------------------------------------------------------ */
 /* Generic content, such as the index list pages */
 /* ------------------------------------------------------------------------ */
